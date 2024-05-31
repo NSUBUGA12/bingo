@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .boss{
+       width: 400px;
+       height: 300px;
+       background-color: blue;
+       transition: width 3s , height 5s, transform 10s; 
+       transition-timing-function:linear;
+    }
+    .boss:hover{
+        width: 700px;
+        transform: rotate(360deg);
+    }
+    .start{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        animation-name: tammie;
+        animation-duration: 20s;
+        position: relative;
+        
+    }
+    @keyframes tammie{
+        0% {background-color: aqua; left:0px ; top:0px}
+        25% {background-color: yellow;left:200px; top:0px;}
+        50% { background-color: black;left: 200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% { background-color: white;left:0px; top:0px;}
+
+    }
+</style>
+<body>
+    <div class="boss">
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga quia dignissimos optio itaque illo, enim minus quae soluta recusandae, eius similique ipsum laboriosam possimus aliquid autem nam a molestias!
+    </p>
+    </div>
+    <div class="start">
+        TAMMIE IS AN OLYMPIC CHAMPION
+    </div>
+</body>
+</html>

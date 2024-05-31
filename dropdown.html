@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            right: 0;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            padding: 12px 16px;
+            z-index: 1;
+            
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+       
+        <span>SUPERHERO </span>
+    <div class="dropdown-content">
+    <p>The greatest of all time is in the house</p>
+    </div>
+    </div>
+<video height="300px" src="./video.mp4" type="video/mp4" controls>
+    <source srcset="" type="video/mp4">
+</video>
+<audio src="./song.mp3"controls >
+    <source src="./song.mp3" type="audio/mp3">
+</audio>
+</body>
+</html>
